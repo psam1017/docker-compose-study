@@ -1,0 +1,13 @@
+# Docker Compose : a tool for defining and running multi-container Docker applications
+
+# docker compose up : starts and runs the entire app
+# docker compose down : stops all containers
+
+# services : a list of services that make up the application
+services:
+
+  nginx: # any service name you want
+    container_name: nginx # any container name you want
+    image: nginx # source image in docker hub
+    ports:
+      - 80:80 # port mapping
